@@ -5,7 +5,7 @@
 ########################################
 
 #### 1.  Data preparation ####
-mu <- read.csv("~/Desktop/Projects/Phorcus/Data/muricids.csv")
+mu <- read.csv("~/PATH/muricids.csv")
 mu <- mu[1:34,] # remove Stramonita haemastoma
 mass <- with(mu, prey.mass/predator.mass) # prey:predator mass ratio
 level <- mu$level # aquarium water level
