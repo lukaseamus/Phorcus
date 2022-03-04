@@ -6,7 +6,7 @@
 
 #### 1.  Data preparation ####
 #### 1.1 Density data ####
-d <- read.csv("~/Desktop/Projects/Phorcus/Data/density.csv")
+d <- read.csv("~/PATH/density.csv")
 pred <- d[d$species %in% c("Stramonita haemastoma", "Thalassoma pavo"),]
 rownames(pred) <- NULL
 d <- d[d$species == "Phorcus turbinatus",]
@@ -16,7 +16,7 @@ den <- d$adjusted
 den.site <- d$site
 
 #### 1.2 Distribution data ####
-dis <- read.csv("~/Desktop/Projects/Phorcus/Data/distribution.csv")
+dis <- read.csv("~/PATH/distribution.csv")
 dis <- dis[dis$species == "Phorcus turbinatus",]
 rownames(dis) <- NULL
 
