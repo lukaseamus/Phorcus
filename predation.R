@@ -6,13 +6,13 @@
 
 #### 1.  Data preparation ####
 #### 1.1 Predation data ####
-p <- read.csv("~/Desktop/Projects/Phorcus/Data/predation.csv")
+p <- read.csv("~/PATH/predation.csv")
 ppos <- p$lat.position
 mass <- p$mass
 pred <- p$predation
 
 #### 1.2 Distribution data ####
-d <- read.csv("~/Desktop/Projects/Phorcus/Data/distribution.csv")
+d <- read.csv("~/PATH/distribution.csv")
 d$species <- factor(d$species, levels = c("Phorcus turbinatus",
                                           "Stramonita haemastoma",
                                           "Thalassoma pavo",
