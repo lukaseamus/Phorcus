@@ -1,8 +1,8 @@
-########################################
-#### Ecology of Phorcus turbinatus  ####
-#### Analysis of physiological data ####
-#### Luka Seamus Wright             ####
-########################################
+##########################################################
+#### Ecology of Phorcus turbinatus                    ####
+#### Analysis of physiological and morphological data ####
+#### Luka Seamus Wright                               ####
+##########################################################
 
 #### 1.  Data preparation ####
 #### 1.1 Length:mass data ####
