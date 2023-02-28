@@ -18,7 +18,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **date** = date given as DD.MM.YY
     - **species** = categorical variable with levels *Phorcus turbinatus*, *Stramonita haemastoma* and *Thalassoma pavo*
     - **original** = count of individuals in defined area (40-cm quadrat for *Phorcus turbinatus* and *Stramonita haemastoma*, 1×10-m transect for *Thalassoma pavo*)
-    - **adjusted** = density given in individuals per square metre
+    - **adjusted** = density given per square metre
 2. `density.R`: Code to analyse and visualise *Phorcus turbinatus* density and distribution data.
     - **Input** = `density.csv`, `distribution.csv` from **Predation**
     - **Output** = Figure 1, *Phorcus turbinatus* site-specific density and distribution results
