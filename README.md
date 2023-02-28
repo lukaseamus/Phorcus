@@ -46,9 +46,9 @@ This repository contains data and annotated R code accompanying article 10.1007/
 3. `muricids.csv`: *In vitro* predation data.
     - **date** = date given as DD.MM.YY
     - **level** = aquarium water level given in metres
-    - **volume** = aquarium volume given in litres
+    - **volume** = aquarium water volume given in litres
     - **space** = vertical air space between water level and mesh given in metres
-    - **fullness** = water volume expressed as a proportion of total aquarium volume
+    - **fullness** = aquarium water volume expressed as a proportion of total aquarium volume
     - **predator** = categorical variable with levels *Stramonita haemastoma* and *Hexaplex trunculus*
     - **prey.length** = *Phorcus turbinatus* shell length given in millimetres
     - **prey.mass** = *Phorcus turbinatus* mass given in grams
