@@ -79,7 +79,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **lat.position** = position in relation to lowest astronomical tide given in metres
     - **length** = *Phorcus turbinatus* shell length given in millimetres
     - **mass** = *Phorcus turbinatus* mass given in grams (NA when shell was empty)
-    - **day** = time since deployment (initial immersion) given in days
+    - **day** = time since deployment (initiation of full immersion) given in days
     - **survival** = survival recorded as 1
 2. `Irradiance.R`: Code to analyse and visualise length-mass relationship and survival data.
     - **Input** = `length.mass.csv`, `physiology.csv`
