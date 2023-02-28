@@ -24,14 +24,15 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **Output** = Figure 1
 
 **Predation**
-1. `Decomposition.csv`: Biomass decomposition data.
-    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **site** = categorical variable with levels West Hoe (WH), Drake's Island (DI) and Jennycliff (JC)
-    - **substratum** = categorical variable with levels Forest and Sediment
-    - **mesh** = mesh diameter given in centimetres
-    - **g.loss** = absolute biomass loss given in grams per day
-    - **perc.loss** = relative biomass loss given in percentage of initial mass per day
-2. `Biochemical.csv`: Elemental stoichiometry and phenols in relation to decomposition.
+1. `distribution.csv`: Distribution data for all studied species.
+    - **site** = categorical variable with levels Xwejni, Dwejra and Ras
+    - **date** = date given as DD.MM.YY
+    - **time** = time given as HH:MM
+    - **species** = categorical variable with levels *Phorcus turbinatus*, *Stramonita haemastoma*, *Thalassoma pavo*, *Hermodice carunculata* and *Hexaplex trunculus*
+    - **position** = position in metres in relation to sea level at the time of observation
+    - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station 
+    - **lat.position** = position in relation to lowest astronomical tide given in metres
+2. `predation.csv`: Elemental stoichiometry and phenols in relation to decomposition.
     - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
     - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
     - **age** = detrital age given in days
@@ -41,12 +42,15 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **N** = final nitrogen content (%)
     - **C** = final carbon content (%)
     - **CN** = final carbon to nitrogen ratio
-3. `Grazing.csv`: Image analysis data of tissue damage on final retrieval.
+3. `muricids.csv`: Image analysis data of tissue damage on final retrieval.
     - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
     - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
     - **excavation** = surface area of excavation scars relative to total tissue area (%)
     - **perforation** = surface area of holes relative to total tissue area plus holes (%)
-4. `Decomposition.R`: Code to analyse and visualise carbon export.
+4. `predation.R`: Code to analyse and visualise carbon export.
+    - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
+    - **Output** = Figure 3, Figure S3, decomposition results
+5. `muricids.R`: Code to analyse and visualise carbon export.
     - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
     - **Output** = Figure 3, Figure S3, decomposition results
     
