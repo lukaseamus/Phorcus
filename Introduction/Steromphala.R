@@ -1,3 +1,8 @@
+################################################
+#### Ecology of Phorcus turbinatus          ####
+#### Calculation of introductory statistics ####
+#### Luka Seamus Wright                     ####
+################################################
 
 S <- read.csv("~/PATH/Steromphala.csv")
 
