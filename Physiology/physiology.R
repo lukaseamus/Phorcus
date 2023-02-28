@@ -6,7 +6,7 @@
 
 #### 1.  Data preparation ####
 #### 1.1 Length:mass data ####
-l.m <- read.csv("~/Desktop/Projects/Phorcus/Data/length.mass.csv")
+l.m <- read.csv("~/PATH/length.mass.csv")
 
 require(ggplot2)
 ggplot(l.m, aes(length, mass)) + 
@@ -27,7 +27,7 @@ l.mm <- l.m$mass
 sp <- factor(l.m$species)
 
 #### 1.2 Physiology data ####
-p <- read.csv("~/Desktop/Projects/Phorcus/Data/physiology.csv")
+p <- read.csv("~/PATH/physiology.csv")
 pl <- p$length
 pm <- p$mass
 d <- p$day
