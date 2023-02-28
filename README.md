@@ -36,8 +36,8 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **site** = categorical variable with levels Xwejni, Dwejra and Ras
     - **date** = date given as DD.MM.YY
     - **time** = time given as HH:MM
-    - **position** = position in metres in relation to sea level at the time of observation
-    - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station
+    - **position** = position in metres in relation to sea level at the time of deployment
+    - **tide** = tidal level in metres above lowest astronomical tide at the time of deployment provided by the Lampedusa tide station
     - **lat.position** = position in relation to lowest astronomical tide given in metres
     - **length** = *Phorcus turbinatus* shell length given in millimetres
     - **mass** = *Phorcus turbinatus* mass given in grams
@@ -74,8 +74,8 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **site** = categorical variable with levels Xwejni, Dwejra and Ras
     - **date** = date given as DD.MM.YY
     - **time** = time given as HH:MM
-    - **position** = position in metres in relation to sea level at the time of observation
-    - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station
+    - **position** = position in metres in relation to sea level at the time of deployment
+    - **tide** = tidal level in metres above lowest astronomical tide at the time of deployment provided by the Lampedusa tide station
     - **lat.position** = position in relation to lowest astronomical tide given in metres
     - **length** = *Phorcus turbinatus* shell length given in millimetres
     - **mass** = *Phorcus turbinatus* mass given in grams (NA when shell was empty)
