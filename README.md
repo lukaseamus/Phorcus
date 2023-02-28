@@ -32,17 +32,17 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **position** = position in metres in relation to sea level at the time of observation
     - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station 
     - **lat.position** = position in relation to lowest astronomical tide given in metres
-2. `predation.csv`: Elemental stoichiometry and phenols in relation to decomposition.
-    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
-    - **age** = detrital age given in days
-    - **g.loss** = absolute biomass loss given in grams per day
-    - **perc.loss** = relative biomass loss given in percentage of initial mass per day
-    - **phenols** = final soluble polyphenolic content (%)
-    - **N** = final nitrogen content (%)
-    - **C** = final carbon content (%)
-    - **CN** = final carbon to nitrogen ratio
-3. `muricids.csv`: Image analysis data of tissue damage on final retrieval.
+2. `predation.csv`: *In situ* predation data.
+    - **site** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **date** = random factor (categorical variable) with mesh bags (B1...9) as levels
+    - **time** = detrital age given in days
+    - **position** = absolute biomass loss given in grams per day
+    - **tide** = relative biomass loss given in percentage of initial mass per day
+    - **lat.position** = final soluble polyphenolic content (%)
+    - **length** = final nitrogen content (%)
+    - **mass** = final carbon content (%)
+    - **predation** = final carbon to nitrogen ratio
+3. `muricids.csv`: *In vitro* predation data.
     - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
     - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
     - **excavation** = surface area of excavation scars relative to total tissue area (%)
