@@ -60,7 +60,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **predation** = predation event recorded as 1
 4. `predation.R`: Code to analyse and visualise *in situ* predation and distribution data.
     - **Input** = `predation.csv`, `distribution.csv` 
-    - **Output** = Figure 2, general *in situ* predation and distribution results
+    - **Output** = Figure 2, *in situ* predation and distribution results across sites
 5. `muricids.R`: Code to analyse and visualise *in vitro* predation data.
     - **Input** = `muricids.csv` 
     - **Output** = Figure S4, *in vitro* predation results
