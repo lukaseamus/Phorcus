@@ -4,7 +4,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
 **Introduction**
 1. `Steromphala.csv`: Data on the lower and upper limits of the distributions of *Steromphala cineraria* and *S. umbilicalis*.
     - **reference** = author name and year of referenced data
-    - **DOI** = digital object identifier or uniform resource locator (URL) of referenced data
+    - **doi** = digital object identifier or uniform resource locator of referenced data
     - **species** = categorical variable with levels *Steromphala cineraria* and *Steromphala umbilicalis*
     - **lower** = lower distributional limit in relation to lowest astronomical tide given in metres
     - **upper** = upper distributional limit in relation to lowest astronomical tide given in metres
@@ -33,20 +33,31 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station 
     - **lat.position** = position in relation to lowest astronomical tide given in metres
 2. `predation.csv`: *In situ* predation data.
-    - **site** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **date** = random factor (categorical variable) with mesh bags (B1...9) as levels
-    - **time** = detrital age given in days
-    - **position** = absolute biomass loss given in grams per day
-    - **tide** = relative biomass loss given in percentage of initial mass per day
-    - **lat.position** = final soluble polyphenolic content (%)
-    - **length** = final nitrogen content (%)
-    - **mass** = final carbon content (%)
-    - **predation** = final carbon to nitrogen ratio
+    - **site** = categorical variable with levels Xwejni, Dwejra and Ras
+    - **date** = date given as DD.MM.YY
+    - **time** = time given as HH:MM
+    - **position** = position in metres in relation to sea level at the time of observation
+    - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station
+    - **lat.position** = position in relation to lowest astronomical tide given in metres
+    - **length** = shell length given in millimetres
+    - **mass** = gastropod mass given in grams
+    - **predation** = predation event recorded as 1
+    - **notes** = notes on what predator ate the gastropod or what organism occupied its shell
 3. `muricids.csv`: *In vitro* predation data.
-    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
-    - **excavation** = surface area of excavation scars relative to total tissue area (%)
-    - **perforation** = surface area of holes relative to total tissue area plus holes (%)
+    - **date** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **level** = random factor (categorical variable) with mesh bags (B1...9) as levels
+    - **volume** = surface area of excavation scars relative to total tissue area (%)
+    - **space** = surface area of holes relative to total tissue area plus holes (%)
+    - **fullness** = 
+    - **predator** =
+    - **prey.length** =
+    - **prey.mass** =
+    - **predator.length** =
+    - **predator.mass** =
+    - **temperature** =
+    - **sst** =
+    - **difference** =
+    - **predation** =
 4. `predation.R`: Code to analyse and visualise carbon export.
     - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
     - **Output** = Figure 3, Figure S3, decomposition results
