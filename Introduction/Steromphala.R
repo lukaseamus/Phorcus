@@ -7,8 +7,8 @@
 S <- read.csv("~/PATH/Steromphala.csv")
 
 require(psych)
-Lstats <- with(S, describeBy(Lower, Species, mat = T))
-Ustats <- with(S, describeBy(Upper, Species, mat = T))
+Lstats <- with(S, describeBy(lower, species, mat = T))
+Ustats <- with(S, describeBy(upper, species, mat = T))
 
 detach(package:psych)
 rm(list = ls())
