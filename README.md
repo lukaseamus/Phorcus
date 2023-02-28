@@ -24,7 +24,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **Output** = Figure 1, *Phorcus turbinatus* site-specific density and distribution results
 
 **Predation**
-1. `distribution.csv`: Distribution data for all studied species.
+1. `distribution.csv`: Vertical distribution data for all studied species.
     - **site** = categorical variable with levels Xwejni, Dwejra and Ras
     - **date** = date given as DD.MM.YY
     - **time** = time given as HH:MM
