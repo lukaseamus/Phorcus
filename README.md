@@ -55,7 +55,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **predator.length** = muricid shell length given in millimetres
     - **predator.mass** = muricid mass given in grams
     - **temperature** = average aquarium water temperature over the 24-hour experiment (°C)
-    - **sst** = average sea surface temperature temperature for the day of the experiment (°C) provided by the Maltese weather station
+    - **sst** = average sea surface temperature for the day of the experiment (°C) provided by the Maltese weather station
     - **difference** = temperature difference between aquarium and sea surface (°C)
     - **predation** = predation event recorded as 1
 4. `predation.R`: Code to analyse and visualise *in situ* predation and distribution data.
