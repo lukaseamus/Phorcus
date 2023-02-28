@@ -42,7 +42,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **length** = *Phorcus turbinatus* shell length given in millimetres
     - **mass** = *Phorcus turbinatus* mass given in grams
     - **predation** = predation event recorded as 1
-    - **notes** = notes on what predator ate *Phorcus turbinatus* or what organism occupied its shell
+    - **notes** = notes on what predator ate *Phorcus turbinatus* or what organism occupied its empty shell
 3. `muricids.csv`: *In vitro* predation data.
     - **date** = date given as DD.MM.YY
     - **level** = aquarium water level given in metres
