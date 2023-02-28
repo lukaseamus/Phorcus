@@ -6,8 +6,8 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **reference** = author name and year of referenced data
     - **DOI** = digital object identifier or uniform resource locator (URL) of referenced data
     - **species** = categorical variable with levels *Steromphala cineraria* and *Steromphala umbilicalis*
-    - **lower** = lower distributional limit given in metres in relation to lowest astronomical tide
-    - **upper** = upper distributional limit given in metres in relation to lowest astronomical tide
+    - **lower** = lower distributional limit in relation to lowest astronomical tide given in metres
+    - **upper** = upper distributional limit in relation to lowest astronomical tide given in metres
 2. `Steromphala.R`: Code to calculate introductory descriptive statistics.
     - **Input** = `Steromphala.csv`
     - **Output** = descriptive statistics in paragraph two of the introduction
