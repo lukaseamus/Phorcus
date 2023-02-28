@@ -1,4 +1,4 @@
-S <- read.csv("~/Desktop/Projects/Phorcus/Data/Steromphala.csv")
+S <- read.csv("~/PATH/Steromphala.csv")
 
 require(psych)
 Lstats <- with(S, describeBy(Lower, Species, mat = T))
