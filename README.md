@@ -10,7 +10,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **upper** = upper distributional limit in relation to lowest astronomical tide given in metres
 2. `Steromphala.R`: Code to calculate introductory descriptive statistics.
     - **Input** = `Steromphala.csv`
-    - **Output** = descriptive statistics in paragraph two of the introduction
+    - **Output** = *Steromphala* spp. distribution descriptive statistics in paragraph two of the introduction
 
 **Density**
 1. `density.csv`: Density data for *Phorcus turbinatus*, *Stramonita haemastoma* and *Thalassoma pavo*.
@@ -21,7 +21,7 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **adjusted** = density given in individuals per square metre
 2. `density.R`: Code to analyse and visualise *Phorcus turbinatus* density and distribution data.
     - **Input** = `density.csv`, `distribution.csv` from **Predation**
-    - **Output** = Figure 1
+    - **Output** = Figure 1, *Phorcus turbinatus* site-specific density and distribution results
 
 **Predation**
 1. `distribution.csv`: Distribution data for all studied species.
@@ -39,49 +39,50 @@ This repository contains data and annotated R code accompanying article 10.1007/
     - **position** = position in metres in relation to sea level at the time of observation
     - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station
     - **lat.position** = position in relation to lowest astronomical tide given in metres
-    - **length** = shell length given in millimetres
-    - **mass** = gastropod mass given in grams
+    - **length** = *Phorcus turbinatus* shell length given in millimetres
+    - **mass** = *Phorcus turbinatus* mass given in grams
     - **predation** = predation event recorded as 1
     - **notes** = notes on what predator ate the gastropod or what organism occupied its shell
 3. `muricids.csv`: *In vitro* predation data.
-    - **date** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **level** = random factor (categorical variable) with mesh bags (B1...9) as levels
-    - **volume** = surface area of excavation scars relative to total tissue area (%)
-    - **space** = surface area of holes relative to total tissue area plus holes (%)
-    - **fullness** = 
-    - **predator** =
-    - **prey.length** =
-    - **prey.mass** =
-    - **predator.length** =
-    - **predator.mass** =
-    - **temperature** =
-    - **sst** =
-    - **difference** =
-    - **predation** =
-4. `predation.R`: Code to analyse and visualise carbon export.
-    - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
-    - **Output** = Figure 3, Figure S3, decomposition results
-5. `muricids.R`: Code to analyse and visualise carbon export.
-    - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
-    - **Output** = Figure 3, Figure S3, decomposition results
+    - **date** = date given as DD.MM.YY
+    - **level** = aquarium water level given in metres
+    - **volume** = aquarium volume given in litres
+    - **space** = vertical air space between water level and mesh given in metres
+    - **fullness** = water volume expressed as a proportion of total aquarium volume
+    - **predator** = categorical variable with levels *Stramonita haemastoma* and *Hexaplex trunculus*
+    - **prey.length** = *Phorcus turbinatus* shell length given in millimetres
+    - **prey.mass** = *Phorcus turbinatus* mass given in grams
+    - **predator.length** = muricid shell length given in millimetres
+    - **predator.mass** = muricid mass given in grams
+    - **temperature** = average aquarium water temperature over the 24-hour experiment (°C)
+    - **sst** = average sea surface temperature temperature for the day of the experiment (°C) provided by the Maltese weather station
+    - **difference** = temperature difference between aquarium and sea surface (°C)
+    - **predation** = predation event recorded as 1
+4. `predation.R`: Code to analyse and visualise *in situ* predation and distribution data.
+    - **Input** = `predation.csv`, `distribution.csv` 
+    - **Output** = Figure 2, general *in situ* predation and distribution results
+5. `muricids.R`: Code to analyse and visualise *in vitro* predation data.
+    - **Input** = `muricids.csv` 
+    - **Output** = Figure S4, *in vitro* predation results
     
 **Physiology**
-1. `L4.csv`: Physical and chemical data from station L4, compiled from data available at https://www.westernchannelobservatory.org.uk/l4_ctdf/index.php.
-    - **Date** = date given as DD.M.YY
-    - **Month** = month
-    - **Year** = year given as YYYY
-    - **Season** = categorical variable with levels Spring, Summer, Autumn and Winter
-    - **Temp** = temperature (°C)
-    - **Fluor** = fluorescence given in milligrams of chlorophyll *a* per cubic metre
-    - **Depth** = depth given in metres
-    - **Density** = water density given in kilograms per cubic metre
-    - **Salinity** = salinity (‰)
-    - **Trans** = transmission (%)
-    - **PAR** = photosynthetically active radiation given in µmol photons per square metre per second
-    - **Oxygen** = oxygen given in µM
-    - **Sound** = sound velocity given in metres per second
-2. `Irradiance.R`: Code to analyse the depth-irradiance relationship.
-    - **Input** = `L4.csv`
-    - **Output** = seasonal and annual exponential depth-irradiance relationships 
+1. `length.mass.csv`: Paired measurements of length and mass for all studied gastropods.
+    - **species** = categorical variable with levels *Phorcus turbinatus*, *Stramonita haemastoma* and *Hexaplex trunculus*
+    - **length** = shell length given in millimetres
+    - **mass** = gastropod mass given in grams
+2. `physiology.csv`: Immersed, predator-free survival data for *Phorcus turbinatus*.
+    - **site** = categorical variable with levels Xwejni, Dwejra and Ras
+    - **date** = date given as DD.MM.YY
+    - **time** = time given as HH:MM
+    - **position** = position in metres in relation to sea level at the time of observation
+    - **tide** = tidal level in metres above lowest astronomical tide at the time of observation provided by the Lampedusa tide station
+    - **lat.position** = position in relation to lowest astronomical tide given in metres
+    - **length** = *Phorcus turbinatus* shell length given in millimetres
+    - **mass** = *Phorcus turbinatus* mass given in grams (NA when shell was empty)
+    - **day** = time since immersion given in days
+    - **survival** = survival recorded as 1
+2. `Irradiance.R`: Code to analyse and visualise length-mass relationship and survival data.
+    - **Input** = `length.mass.csv`, `physiology.csv`
+    - **Output** = Figure 3, Figure S2, physiology and allometry results
 
 Luka Seamus Wright, 28 February 2023
