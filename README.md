@@ -2,7 +2,7 @@
 This repository contains data and annotated R code accompanying article 10.1007/s10750-023-05143-4 in *Hydrobiologia*. The repository containes the four data and code folders **Introduction**, **Density**, **Predation** and **Physiology** alongside all final **Figures** in vector format. Below is a description of each column within the data and the input and output of each R script.
 
 **Introduction**
-1. `Steromphala.csv`: Data on the lower and upper limits of the distributions of *Steromphala cineraria* and *S. umbilicalis*.
+1. `Steromphala.csv`: Data on the lower and upper limits of the vertical distributions of *Steromphala cineraria* and *S. umbilicalis*.
     - **reference** = author name and year of referenced data
     - **doi** = digital object identifier or uniform resource locator of referenced data
     - **species** = categorical variable with levels *Steromphala cineraria* and *Steromphala umbilicalis*
