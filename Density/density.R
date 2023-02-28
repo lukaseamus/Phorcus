@@ -1,8 +1,8 @@
-########################################
-#### Ecology of Phorcus turbinatus  ####
-#### Analysis of density data       ####
-#### Luka Seamus Wright             ####
-########################################
+###################################################
+#### Ecology of Phorcus turbinatus             ####
+#### Analysis of density and distribution data ####
+#### Luka Seamus Wright                        ####
+###################################################
 
 #### 1.  Data preparation ####
 #### 1.1 Density data ####
