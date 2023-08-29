@@ -181,7 +181,7 @@ denp <- ggplot() +
                                                       "Il-Bajja tax-Xwejni")) +
         annotate("text", x = 485, y = 1.5:2.5, size = 4.2, family = "Helvetica Neue",
                  label = c("***", "***")) +
-        labs(x = expression("Density (m"^-1*")")) +
+        labs(x = expression("Density (m"^-2*")")) +
         scale_x_continuous(expand = c(0, 0)) +
         scale_y_discrete(position = "right", expand = expansion(add = c(0, 1.1)),
                          labels = c(expression(italic("n ")*"= 100"),
